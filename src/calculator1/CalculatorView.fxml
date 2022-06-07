@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane id="AnchorPane" prefHeight="364.0" prefWidth="382.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculator1.CalculatorViewController">
+    <children>
+      <TextField fx:id="display" alignment="CENTER_RIGHT" editable="false" layoutX="12.0" layoutY="53.0" prefHeight="60.0" prefWidth="360.0" text="0" />
+      <GridPane layoutX="-1.0" layoutY="124.0" prefHeight="272.0" prefWidth="382.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="memoryClearButton" mnemonicParsing="false" onAction="#handleBottonAction" prefHeight="51.0" prefWidth="76.0" text="MC" />
+            <Button fx:id="memoryRecallButton" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleBottonAction" prefHeight="51.0" prefWidth="76.0" text="MR" GridPane.columnIndex="1" />
+            <Button fx:id="memoryStoreButton" layoutX="86.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleBottonAction" prefHeight="51.0" prefWidth="76.0" text="MS" GridPane.columnIndex="2" />
+            <Button fx:id="memoryAddButton" layoutX="86.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleBottonAction" prefHeight="51.0" prefWidth="76.0" text="M+" GridPane.columnIndex="3" />
+            <Button fx:id="memorySubractButton" layoutX="86.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleBottonAction" prefHeight="51.0" prefWidth="76.0" text="M-" GridPane.columnIndex="4" />
+            <Button fx:id="backspaceButton" layoutX="86.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleBottonAction" prefHeight="51.0" prefWidth="76.0" text="Backspace" GridPane.rowIndex="1" />
+            <Button fx:id="clearEntryButton" layoutX="86.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleBottonAction" prefHeight="51.0" prefWidth="76.0" text="CE" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="clearButton" layoutX="86.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleBottonAction" prefHeight="51.0" prefWidth="76.0" text="C" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button fx:id="plusMinusBotton" layoutX="86.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleBottonAction" prefHeight="51.0" prefWidth="76.0" text="+/-" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Button fx:id="rootButton" layoutX="86.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleBottonAction" prefHeight="51.0" prefWidth="76.0" text="√" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <Button fx:id="sevenButton" layoutX="315.0" layoutY="56.0" mnemonicParsing="false" onAction="#handleBottonAction" prefHeight="51.0" prefWidth="76.0" text="7" GridPane.rowIndex="2" />
+            <Button fx:id="eightButton" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleBottonAction" prefHeight="51.0" prefWidth="76.0" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button fx:id="nineButton" layoutX="162.0" layoutY="102.0" mnemonicParsing="false" onAction="#handleBottonAction" prefHeight="51.0" prefWidth="76.0" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button fx:id="divideButton" layoutX="86.0" layoutY="102.0" mnemonicParsing="false" onAction="#handleBottonAction" prefHeight="51.0" prefWidth="76.0" text="/" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Button fx:id="percentageButton" layoutX="86.0" layoutY="102.0" mnemonicParsing="false" onAction="#handleBottonAction" prefHeight="51.0" prefWidth="76.0" text="\%" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <Button fx:id="fourButton" layoutX="86.0" layoutY="102.0" mnemonicParsing="false" onAction="#handleBottonAction" prefHeight="51.0" prefWidth="76.0" text="4" GridPane.rowIndex="3" />
+            <Button fx:id="fiveButton" layoutX="86.0" layoutY="102.0" mnemonicParsing="false" onAction="#handleBottonAction" prefHeight="51.0" prefWidth="76.0" text="5" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button fx:id="sixButton" layoutX="86.0" layoutY="102.0" mnemonicParsing="false" onAction="#handleBottonAction" prefHeight="51.0" prefWidth="76.0" text="6" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Button fx:id="multiplyButton" layoutX="86.0" layoutY="102.0" mnemonicParsing="false" onAction="#handleBottonAction" prefHeight="51.0" prefWidth="76.0" text="*" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Button fx:id="inverseButton" layoutX="86.0" layoutY="102.0" mnemonicParsing="false" onAction="#handleBottonAction" prefHeight="51.0" prefWidth="76.0" text="1/x" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <Button fx:id="oneButton" layoutX="86.0" layoutY="102.0" mnemonicParsing="false" onAction="#handleBottonAction" prefHeight="51.0" prefWidth="76.0" text="1" GridPane.rowIndex="4" />
+            <Button fx:id="twoButton" layoutX="86.0" layoutY="102.0" mnemonicParsing="false" onAction="#handleBottonAction" prefHeight="51.0" prefWidth="76.0" text="2" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Button fx:id="threeButton" layoutX="86.0" layoutY="102.0" mnemonicParsing="false" onAction="#handleBottonAction" prefHeight="51.0" prefWidth="76.0" text="3" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Button fx:id="subtractButton" layoutX="162.0" layoutY="192.0" mnemonicParsing="false" onAction="#handleBottonAction" prefHeight="51.0" prefWidth="76.0" text="-" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Button fx:id="equalButton" layoutX="162.0" layoutY="192.0" mnemonicParsing="false" onAction="#handleBottonAction" prefHeight="52.0" prefWidth="77.0" text="=" GridPane.columnIndex="4" GridPane.rowIndex="4" GridPane.rowSpan="2" />
+            <Button fx:id="zeroButton" layoutX="162.0" layoutY="192.0" mnemonicParsing="false" onAction="#handleBottonAction" prefHeight="45.0" prefWidth="153.0" text="0" GridPane.columnSpan="3" GridPane.rowIndex="5" />
+            <Button fx:id="pointButton" layoutX="162.0" layoutY="192.0" mnemonicParsing="false" onAction="#handleBottonAction" prefHeight="51.0" prefWidth="76.0" text="." GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Button fx:id="addButton" layoutX="162.0" layoutY="237.0" mnemonicParsing="false" onAction="#handleBottonAction" prefHeight="51.0" prefWidth="76.0" text="+" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+         </children>
+      </GridPane>
+      <HBox layoutY="-1.0" prefHeight="45.0" prefWidth="196.0">
+         <children>
+            <Button fx:id="view" mnemonicParsing="false" prefHeight="43.0" prefWidth="64.0" text="View" />
+            <Button fx:id="edit" mnemonicParsing="false" prefHeight="43.0" prefWidth="67.0" text="Edit" />
+            <Button fx:id="help" mnemonicParsing="false" prefHeight="43.0" prefWidth="71.0" text="Help" />
+         </children>
+      </HBox>
+    </children>
+</AnchorPane>
